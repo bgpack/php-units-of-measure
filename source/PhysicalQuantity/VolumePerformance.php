@@ -3,10 +3,13 @@
 namespace PhpUnitsOfMeasure\PhysicalQuantity;
 
 use PhpUnitsOfMeasure\AbstractPhysicalQuantity;
+use PhpUnitsOfMeasure\HasSIUnitsTrait;
 use PhpUnitsOfMeasure\UnitOfMeasure;
 
 class VolumePerformance extends AbstractPhysicalQuantity
 {
+    use HasSIUnitsTrait;
+
     protected static $unitDefinitions;
 
     protected static function initialize()
@@ -22,7 +25,7 @@ class VolumePerformance extends AbstractPhysicalQuantity
         static::addUnit($cubicmeterPerRevolution);
 
         static::addMissingSIPrefixedUnits(
-            $cubicmeterpersecond,
+            $cubicmeterPerRevolution,
             1,
             '%pm^3/1/min',
             [

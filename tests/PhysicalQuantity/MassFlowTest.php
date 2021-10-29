@@ -2,9 +2,9 @@
 
 namespace PhpUnitsOfMeasureTest\PhysicalQuantity;
 
-use PhpUnitsOfMeasure\PhysicalQuantity\Mass;
+use PhpUnitsOfMeasure\PhysicalQuantity\MassFlow;
 
-class MassTest extends AbstractPhysicalQuantityTestCase
+class MassFlowTest extends AbstractPhysicalQuantityTestCase
 {
     protected $supportedUnitsWithAliases = [
         'g/s',
@@ -12,12 +12,12 @@ class MassTest extends AbstractPhysicalQuantityTestCase
 
     protected function instantiateTestQuantity()
     {
-        return new Mass(1, 'kg/s');
+        return new MassFlow(1, 'kg/s');
     }
 
     public function testToGramsPerSecond()
     {
-        $quantity = new Mass(5, 'kg/s');
+        $quantity = new MassFlow(5, 'kg/s');
         $this->assertEquals(5000, $quantity->toUnit('g/s'));
     }
 }

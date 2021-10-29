@@ -16,6 +16,7 @@ class VolumeFlow extends AbstractPhysicalQuantity
     {
         // Cubic meter per second
         $cubicmeterpersecond = UnitOfMeasure::nativeUnitFactory('m^3/s');
+        $cubicmeterpersecond->addAlias('m3/s');
         $cubicmeterpersecond->addAlias('m³/s');
         $cubicmeterpersecond->addAlias('cubic meter per second');
         $cubicmeterpersecond->addAlias('cubic meters per second');
@@ -28,6 +29,7 @@ class VolumeFlow extends AbstractPhysicalQuantity
             1,
             '%pm^3/s',
             [
+                '%pm3/s',
                 '%pm³/s',
                 'cubic %Pmeter per second',
                 'cubic %Pmeters per second',
@@ -49,6 +51,7 @@ class VolumeFlow extends AbstractPhysicalQuantity
 
         // Cubic meter per hour
         $newUnit = UnitOfMeasure::linearUnitFactory('m^3/h', 1 / 3600);
+        $newUnit->addAlias('m3/h');
         $newUnit->addAlias('m³/h');
         $newUnit->addAlias('cmh');
         $newUnit->addAlias('CMH');

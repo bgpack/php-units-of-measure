@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpUnitsOfMeasure\PhysicalQuantity;
 
 use PhpUnitsOfMeasure\AbstractPhysicalQuantity;
@@ -15,6 +16,7 @@ class Volume extends AbstractPhysicalQuantity
     {
         // Cubic meter
         $cubicmeter = UnitOfMeasure::nativeUnitFactory('m^3');
+        $cubicmeter->addAlias('m3');
         $cubicmeter->addAlias('m³');
         $cubicmeter->addAlias('cubic meter');
         $cubicmeter->addAlias('cubic meters');
@@ -27,17 +29,19 @@ class Volume extends AbstractPhysicalQuantity
             1,
             '%pm^3',
             [
+                '%pm3',
                 '%pm³',
                 'cubic %Pmeter',
                 'cubic %Pmeters',
                 'cubic %Pmetre',
-                'cubic %Pmetres'
+                'cubic %Pmetres',
             ],
             3 // cubic power factor
         );
 
         // Cubic foot
         $newUnit = UnitOfMeasure::linearUnitFactory('ft^3', pow(0.3048, 3));
+        $newUnit->addAlias('ft3');
         $newUnit->addAlias('ft³');
         $newUnit->addAlias('cubic foot');
         $newUnit->addAlias('cubic feet');
@@ -45,6 +49,7 @@ class Volume extends AbstractPhysicalQuantity
 
         // Cubic inch
         $newUnit = UnitOfMeasure::linearUnitFactory('in^3', pow(0.0254, 3));
+        $newUnit->addAlias('in3');
         $newUnit->addAlias('in³');
         $newUnit->addAlias('cubic inch');
         $newUnit->addAlias('cubic inches');
@@ -52,6 +57,7 @@ class Volume extends AbstractPhysicalQuantity
 
         // Cubic yard
         $newUnit = UnitOfMeasure::linearUnitFactory('yd^3', pow(0.9144, 3));
+        $newUnit->addAlias('yd3');
         $newUnit->addAlias('yd³');
         $newUnit->addAlias('cubic yard');
         $newUnit->addAlias('cubic yards');
@@ -75,7 +81,7 @@ class Volume extends AbstractPhysicalQuantity
                 '%Pliter',
                 '%Pliters',
                 '%Plitre',
-                '%Plitres'
+                '%Plitres',
             ]
         );
 

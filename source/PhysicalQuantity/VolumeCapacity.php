@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpUnitsOfMeasure\PhysicalQuantity;
 
 use PhpUnitsOfMeasure\AbstractPhysicalQuantity;
@@ -8,7 +9,7 @@ use PhpUnitsOfMeasure\UnitOfMeasure;
 class VolumeCapacity extends AbstractPhysicalQuantity
 {
     use HasSIUnitsTrait;
-    
+
     protected static $unitDefinitions;
 
     protected static function initialize()
@@ -31,7 +32,7 @@ class VolumeCapacity extends AbstractPhysicalQuantity
                 '%Pliter per Charge',
                 '%Pliters per Charge',
                 '%Plitre per Charge',
-                '%Plitres per Charge'
+                '%Plitres per Charge',
             ]
         );
 

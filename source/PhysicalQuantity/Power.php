@@ -1,9 +1,10 @@
 <?php
+
 namespace PhpUnitsOfMeasure\PhysicalQuantity;
 
 use PhpUnitsOfMeasure\AbstractPhysicalQuantity;
-use PhpUnitsOfMeasure\UnitOfMeasure;
 use PhpUnitsOfMeasure\HasSIUnitsTrait;
+use PhpUnitsOfMeasure\UnitOfMeasure;
 
 class Power extends AbstractPhysicalQuantity
 {

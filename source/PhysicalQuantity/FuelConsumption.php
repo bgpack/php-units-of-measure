@@ -1,16 +1,17 @@
 <?php
+
 namespace PhpUnitsOfMeasure\PhysicalQuantity;
 
 use PhpUnitsOfMeasure\AbstractPhysicalQuantity;
-use PhpUnitsOfMeasure\UnitOfMeasure;
 use PhpUnitsOfMeasure\HasSIUnitsTrait;
+use PhpUnitsOfMeasure\UnitOfMeasure;
 
-class FuelConsumption  extends AbstractPhysicalQuantity
+class FuelConsumption extends AbstractPhysicalQuantity
 {
     use HasSIUnitsTrait;
 
     protected static $unitDefinitions;
-    
+
     protected static function initialize()
     {
         // Gram per kilo Watt hour

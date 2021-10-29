@@ -1,8 +1,8 @@
 <?php
+
 namespace PhpUnitsOfMeasure\PhysicalQuantity;
 
 use PhpUnitsOfMeasure\AbstractPhysicalQuantity;
-use PhpUnitsOfMeasure\HasSIUnitsTrait;
 use PhpUnitsOfMeasure\UnitOfMeasure;
 
 class MassPerformance extends AbstractPhysicalQuantity

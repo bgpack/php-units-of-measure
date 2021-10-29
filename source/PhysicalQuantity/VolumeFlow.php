@@ -1,4 +1,5 @@
 <?php
+
 namespace PhpUnitsOfMeasure\PhysicalQuantity;
 
 use PhpUnitsOfMeasure\AbstractPhysicalQuantity;
@@ -31,7 +32,7 @@ class VolumeFlow extends AbstractPhysicalQuantity
                 'cubic %Pmeter per second',
                 'cubic %Pmeters per second',
                 'cubic %Pmetre per second',
-                'cubic %Pmetres per second'
+                'cubic %Pmetres per second',
             ],
             3 // cubic power factor
         );
@@ -73,7 +74,7 @@ class VolumeFlow extends AbstractPhysicalQuantity
                 '%Pliter per second',
                 '%Pliters per second',
                 '%Plitre per second',
-                '%Plitres per second'
+                '%Plitres per second',
             ]
         );
 

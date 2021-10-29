@@ -42,5 +42,15 @@ class Power extends AbstractPhysicalQuantity
         $newUnit->addAlias('dbm');
         $newUnit->addAlias('decibels-milliwatt');
         static::addUnit($newUnit);
+
+        // horsepower (imperial)
+        $newUnit = UnitOfMeasure::linearUnitFactory('hp', 745.7);
+        $newUnit->addAlias('horsepower');
+        static::addUnit($newUnit);
+
+        // pferdestaerken (metric)
+        $newUnit = UnitOfMeasure::linearUnitFactory('PS', 735.5);
+        $newUnit->addAlias('Pferdestärken');
+        static::addUnit($newUnit);
     }
 }

@@ -99,6 +99,14 @@ class Velocity extends AbstractPhysicalQuantity
         $newUnit->addAlias('feet per minute');
         static::addUnit($newUnit);
 
+        // feet per hour
+        $newUnit = UnitOfMeasure::linearUnitFactory('ft/h', 0.3048 / 3600);
+        $newUnit->addAlias('fph');
+        $newUnit->addAlias('FPH');
+        $newUnit->addAlias('feet/hour');
+        $newUnit->addAlias('feet per hour');
+        static::addUnit($newUnit);
+
         // miles per second
         $newUnit = UnitOfMeasure::linearUnitFactory('mps', 1609.344);
         $newUnit->addAlias('MPS');

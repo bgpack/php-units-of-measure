@@ -28,9 +28,15 @@ class MassFlow extends AbstractPhysicalQuantity
                 '%Pkilometer per second',
                 '%Pkilometers per second',
                 '%Pkilometre per second',
-                '%Pkilometres per second'
+                '%Pkilometres per second',
             ]
         );
+
+        // gram per s
+        $newUnit = UnitOfMeasure::linearUnitFactory('g/s', 1e-3);
+        $newUnit->addAlias('gram per second');
+        $newUnit->addAlias('grams per second');
+        static::addUnit($newUnit);
 
         // kilogram per minute
         $newUnit = UnitOfMeasure::linearUnitFactory('kg/min', 1 / 60);
@@ -43,7 +49,5 @@ class MassFlow extends AbstractPhysicalQuantity
         $newUnit->addAlias('kilogram per hour');
         $newUnit->addAlias('kilogram per hour');
         static::addUnit($newUnit);
-
-
     }
 }

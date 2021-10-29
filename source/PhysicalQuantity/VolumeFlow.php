@@ -38,6 +38,7 @@ class VolumeFlow extends AbstractPhysicalQuantity
 
         // Cubic meter per minute
         $newUnit = UnitOfMeasure::linearUnitFactory('m^3/min', 1 / 60);
+        $newUnit->addAlias('m3/min');
         $newUnit->addAlias('m³/min');
         $newUnit->addAlias('cmm');
         $newUnit->addAlias('CMM');
@@ -118,6 +119,7 @@ class VolumeFlow extends AbstractPhysicalQuantity
 
         // Cubic foot per hour
         $newUnit = UnitOfMeasure::linearUnitFactory('ft^3/h', pow(0.3048, 3) / 3600);
+        $newUnit->addAlias('ft3/h');
         $newUnit->addAlias('cfh');
         $newUnit->addAlias('CFH');
         $newUnit->addAlias('ft³/h');

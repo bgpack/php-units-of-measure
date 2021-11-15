@@ -117,6 +117,7 @@ class Velocity extends AbstractPhysicalQuantity
         // miles per hour
         $newUnit = UnitOfMeasure::linearUnitFactory('mph', 1609.344 / 3600);
         $newUnit->addAlias('MPH');
+        $newUnit->addAlias('miles/h');
         $newUnit->addAlias('miles/hour');
         $newUnit->addAlias('miles per hour');
         static::addUnit($newUnit);

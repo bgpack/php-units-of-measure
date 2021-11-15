@@ -68,6 +68,7 @@ class Pressure extends AbstractPhysicalQuantity
 
         // Pound per Square Inch
         $newUnit = UnitOfMeasure::linearUnitFactory('psi', 6894.757293168);
+        $newUnit->addAlias('PSI');
         $newUnit->addAlias('pounds per square inch');
         static::addUnit($newUnit);
 

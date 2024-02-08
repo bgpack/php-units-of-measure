@@ -17,7 +17,7 @@ class Torque extends AbstractPhysicalQuantity
         static::addUnit($netwonMeter);
 
         // US Foot-pounds-force
-        $newUnit = UnitOfMeasure::linearUnitFactory('ft-lb', 0.7376);
+        $newUnit = UnitOfMeasure::linearUnitFactory('ft-lb', 1.3558);
         $newUnit->addAlias('ft-lbs');
         $newUnit->addAlias('ftlb');
         $newUnit->addAlias('ftlbs');

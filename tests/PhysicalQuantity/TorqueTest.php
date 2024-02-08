@@ -22,7 +22,7 @@ class TorqueTest extends AbstractPhysicalQuantityTestCase
     public function testToFeetPoundForce()
     {
         $value = new Torque(1000, 'Nm');
-        $this->assertEquals(0.7376, $value->toUnit('ft-lbs'));
+        $this->assertEquals(73.75621493, $value->toUnit('ft-lbs'));
     }
 
 }

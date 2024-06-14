@@ -34,7 +34,7 @@ class Length extends AbstractPhysicalQuantity
         );
 
         // mmH20 
-        $newUnit = UnitOfMeasure::linearUnitFactory('mmH20', 0.001);
+        $newUnit = UnitOfMeasure::linearUnitFactory('mmH2O', 0.001);
         static::addUnit($newUnit);
 
         // Foot

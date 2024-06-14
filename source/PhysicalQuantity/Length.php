@@ -19,7 +19,6 @@ class Length extends AbstractPhysicalQuantity
         $meter->addAlias('meters');
         $meter->addAlias('metre');
         $meter->addAlias('metres');
-        $meter->addAlias('mH20');
         static::addUnit($meter);
 
         static::addMissingSIPrefixedUnits(
@@ -30,10 +29,13 @@ class Length extends AbstractPhysicalQuantity
                 '%Pmeter',
                 '%Pmeters',
                 '%Pmetre',
-                '%Pmetres',
-                '%PmH2O'
+                '%Pmetres'
             ]
         );
+
+        // mmH20 
+        $newUnit = UnitOfMeasure::linearUnitFactory('mmH20', 0.001);
+        static::addUnit($newUnit);
 
         // Foot
         $newUnit = UnitOfMeasure::linearUnitFactory('ft', 0.3048);

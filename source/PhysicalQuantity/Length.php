@@ -19,7 +19,7 @@ class Length extends AbstractPhysicalQuantity
         $meter->addAlias('meters');
         $meter->addAlias('metre');
         $meter->addAlias('metres');
-        $meter->addAlias('mmH20');
+        $meter->addAlias('mH20');
         static::addUnit($meter);
 
         static::addMissingSIPrefixedUnits(
@@ -31,6 +31,7 @@ class Length extends AbstractPhysicalQuantity
                 '%Pmeters',
                 '%Pmetre',
                 '%Pmetres'
+                '%PmH2O'
             ]
         );
 

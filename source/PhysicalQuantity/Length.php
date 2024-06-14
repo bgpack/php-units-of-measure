@@ -19,6 +19,7 @@ class Length extends AbstractPhysicalQuantity
         $meter->addAlias('meters');
         $meter->addAlias('metre');
         $meter->addAlias('metres');
+        $meter->addAlias('mmH20');
         static::addUnit($meter);
 
         static::addMissingSIPrefixedUnits(
@@ -43,6 +44,7 @@ class Length extends AbstractPhysicalQuantity
         $newUnit = UnitOfMeasure::linearUnitFactory('in', 0.0254);
         $newUnit->addAlias('inch');
         $newUnit->addAlias('inches');
+        $newUnit->addAlias('inH2O');
         static::addUnit($newUnit);
 
         // Mile

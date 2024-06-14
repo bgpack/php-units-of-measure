@@ -12,6 +12,7 @@ class LengthTest extends AbstractPhysicalQuantityTestCase
         'meters',
         'metre',
         'metres',
+        'mmH2O'
         'Ym',
         'yottameter',
         'yottameters',
@@ -118,6 +119,7 @@ class LengthTest extends AbstractPhysicalQuantityTestCase
         'in',
         'inch',
         'inches',
+        'inH2O',
         'mi',
         'mile',
         'miles',
@@ -261,4 +263,10 @@ class LengthTest extends AbstractPhysicalQuantityTestCase
         $quantity = new Length(150000000000000, 'km');
         $this->assertEquals(4861.168934166548, $quantity->toUnit('mpc'));
     }
+    public function testToMmH2O()
+    {
+        $quantity = new Length(5, 'inH2O');
+        $this->assertEquals(127, $quantity->toUnit('mmH2O'));
+    }
+
 }
